@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.suoron.ssm.dao.mapping.TbOrderMapper" >
+  <resultMap id="BaseResultMap" type="com.suoron.ssm.dao.pojo.TbOrder" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="o_sendtype" property="oSendtype" jdbcType="VARCHAR" />
+    <result column="o_paytype" property="oPaytype" jdbcType="VARCHAR" />
+    <result column="o_paycount" property="oPaycount" jdbcType="DOUBLE" />
+    <result column="o_orderdate" property="oOrderdate" jdbcType="DATE" />
+    <result column="o_checkstate" property="oCheckstate" jdbcType="INTEGER" />
+    <result column="o_checkdate" property="oCheckdate" jdbcType="DATE" />
+    <result column="o_checkperson" property="oCheckperson" jdbcType="VARCHAR" />
+    <result column="userid" property="userid" jdbcType="INTEGER" />
+    <result column="o_shperson" property="oShperson" jdbcType="VARCHAR" />
+    <result column="o_shphone" property="oShphone" jdbcType="VARCHAR" />
+    <result column="o_shaddress" property="oShaddress" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, o_sendtype, o_paytype, o_paycount, o_orderdate, o_checkstate, o_checkdate, o_checkperson, 
+    userid, o_shperson, o_shphone, o_shaddress
+  </sql>
+</mapper>
